@@ -40,4 +40,22 @@ sol) 한 개의 추상 클래스인 Robot에 추상화를 통해 원하는 기�
 요구사항이 변경될 때마다 그에 따른 전략 클래스를 생성하는 것 또한 비용인 것 같고 
 트레이드 오프 요소인것 같다. 
 
+## 자바에서 쓰이는 전략 패턴 
+
+sort() 정렬 메서드에 사용되는 Comparator 인터페이스 
+
+```java
+
+        Arrays.sort(arr); // 오름차순 정렬
+        System.out.println(Arrays.toString(arr) + "\n");
+
+        Arrays.sort(arr, Comparator.reverseOrder()); 
+        System.out.println(Arrays.toString(arr) + "\n");
+            
+        Arrays.sort(arr, Comparator.naturalOrder()); 
+        System.out.println(Arrays.toString(arr) + "\n");
+```
+
+매개변수 마다 각기 다른 전략이 쓰이고 내림차순, 오름차순으로 나타낼 수 있다. 
+
 
